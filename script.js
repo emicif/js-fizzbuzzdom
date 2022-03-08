@@ -12,23 +12,33 @@ console.log('JS OK!');
 // Come creare nuovi elementi html e appenderli al container?
 
 
-// Stampi in console i numeri da 1 a 100
 
+// Stampi in console i numeri da 1 a 100
+const divNumber = document.querySelector("#number");
+let i = 1
 
 for (let i = 1; i <= 100; i ++) {
-    console.log(i);
+    const element = `<div class="num"> ${i} </div>`;
+    divNumber.innerHTML += element;
+    
     // multipli di 3 stampa “Fizz” 
-    if( i % 3 == 0 ) { 
-        console.log("Fizz");  
-        }
+    if(i % 3 == 0) { 
+    console.log("Fizz");  
+    }
+    
+   
     // multipli di 5 stampa “Buzz”
-    if( i % 5 == 0 ) { 
+    if(i % 5 == 0) { 
         console.log("Buzz");  
         }
     // multipli sia di 3 che di 5 stampa “FizzBuzz” 
-    if ( (i % 3 == 0) && ( i % 5 == 0 )) {
+    if ( (i % 3 == 0) && (i % 5 == 0)) {
         console.log("FizzBuzz");
+       
+    } else {
+        console.log(i)
     }
+    
 }
 
 
