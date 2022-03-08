@@ -15,30 +15,35 @@ console.log('JS OK!');
 
 // Stampi in console i numeri da 1 a 100
 const divNumber = document.querySelector("#number");
-let i = 1
+const num = document.querySelector (".num");
+//let i = 1
 
+let element;
 
 for (let i = 1; i <= 100; i ++) {
-    const element = `<div class="num"> ${i} </div>`;
-    divNumber.innerHTML += element; 
+  
     
     // multipli di 3 stampa “Fizz” 
-    if(i % 3 == 0) { 
-    console.log("Fizz");
-        }
+    if((i % 3 == 0) && (i % 5 == 0)) {
+        console.log("FizzBuzz");
+        element = `<div class="fizzbuz"> FizzBuzz </div>`;
+    } else if(i % 3 == 0) { 
+        console.log("Fizz"); 
+        element = `<div class="fizz"> Fizz </div>`;
+    }
     
     // multipli di 5 stampa “Buzz”
     else if(i % 5 == 0) { 
         console.log("Buzz");  
-        }
+        element = `<div class="buzz"> Buzz </div>`;
+    }
     // multipli sia di 3 che di 5 stampa “FizzBuzz” 
-    else if ( (i % 3 == 0) && (i % 5 == 0)) {
-        console.log("FizzBuzz");
-          
-        } else {
-            console.log(i)
-        }
-        
+    else {
+        console.log(i)
+        element = `<div class="num"> ${i} </div>`;
+       
+    }
+    divNumber.innerHTML += element;       
 }
 
 

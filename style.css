@@ -1,5 +1,6 @@
 #number {
   height: 500px;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -11,4 +12,35 @@
   text-align: center;
   vertical-align: middle;
   line-height: 50px;
+  background-color: red;
+}
+
+.fizz {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  background-color: aqua;
+}
+
+.buzz {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  background-color: greenyellow;
+}
+
+.fizzbuz {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  background-color: pink;
 }
